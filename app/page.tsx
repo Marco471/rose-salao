@@ -5,19 +5,23 @@ export default function Home() {
     <main>
       <section className="hero">
         <Image
-  src="/banner2026.jpg"
-  alt="Rose Salão de Beleza"
-  fill
-  priority
-  sizes="100vw"
-  style={{
-    objectFit: "cover",
-    objectPosition: "center 20%",
-  }}
-/>
+          src="/banner2026.jpg"
+          alt="Rose Salão de Beleza"
+          fill
+          priority
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+            objectPosition: "center 20%",
+          }}
+        />
 
         <div className="overlay">
-          <h1>Rose Salão de Beleza</h1>
+          <h1>
+            SALÃO DE BELEZA
+            <br />
+            ROSE
+          </h1>
 
           <p>Beleza, cuidado e autoestima.</p>
 
@@ -48,30 +52,13 @@ export default function Home() {
       <section className="servicos">
         <h2>Serviços</h2>
 
-        <div className="categoria">
-          <h3>Cabelos</h3>
-          <p>Corte • Escova • Progressiva • Selagem • Botox</p>
-        </div>
-
-        <div className="categoria">
-          <h3>Coloração</h3>
-          <p>Mechas • Luzes • Reflexos • Blindagem</p>
-        </div>
-
-        <div className="categoria">
-          <h3>Tratamentos</h3>
-          <p>Hidratação • Cronograma Capilar</p>
-        </div>
-
-        <div className="categoria">
-          <h3>Beleza</h3>
-          <p>Maquiagem • Penteado • Sobrancelha • Buço</p>
-        </div>
-
-        <div className="categoria">
-          <h3>Bem-estar</h3>
-          <p>Day Spa</p>
-        </div>
+        <p>
+          Corte • Escova • Progressiva • Selagem • Botox •
+          Mechas • Luzes • Reflexos • Blindagem •
+          Hidratação • Cronograma Capilar •
+          Maquiagem • Penteado • Sobrancelha • Buço •
+          Day Spa
+        </p>
       </section>
 
       <section className="galeria">
