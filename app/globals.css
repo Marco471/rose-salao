@@ -24,7 +24,6 @@ body {
 .overlay {
   position: absolute;
   inset: 0;
-
   background: rgba(0, 0, 0, 0.35);
 
   display: flex;
@@ -95,24 +94,15 @@ body {
 .servicos h2 {
   color: #a13d63;
   font-size: 2.5rem;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
-.categoria {
-  max-width: 800px;
-  margin: 0 auto 40px auto;
-}
-
-.categoria h3 {
-  color: #a13d63;
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-}
-
-.categoria p {
-  color: #666;
-  font-size: 1.1rem;
-  line-height: 1.8;
+.servicos p {
+  max-width: 900px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 1.15rem;
+  line-height: 2;
 }
 
 /* GALERIA */
@@ -180,7 +170,7 @@ body {
     font-size: 2rem;
   }
 
-  .categoria p {
+  .servicos p {
     font-size: 1rem;
   }
 }
