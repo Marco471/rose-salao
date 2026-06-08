@@ -155,19 +155,10 @@ body {
   padding: 20px;
 }
 
+
 .rodape p {
-  margin: 5px 0;
+  margin: 0;
   font-size: 0.95rem;
-}
-
-.rodape a {
-  color: #f4c2d7;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.rodape a:hover {
-  text-decoration: underline;
 }
 
 /* RESPONSIVO */

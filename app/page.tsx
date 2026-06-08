@@ -121,6 +121,10 @@ export default function Home() {
           WhatsApp
         </a>
       </section>
+
+      <footer className="rodape">
+        <p>© 2026 Salão de Beleza Rose. Todos os direitos reservados.</p>
+      </footer>
     </main>
   );
 }
