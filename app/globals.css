@@ -14,8 +14,8 @@ body {
 
 .hero {
   position: relative;
-  height: 55vh;
-  min-height: 450px;
+  height: 45vh;
+  min-height: 380px;
 }
 
 .overlay {
