@@ -1,26 +1,182 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  height: 55vh;
+  min-height: 450px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.35);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.overlay h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.botao {
+  background: #a13d63;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  transform: translateY(-2px);
+}
+
+/* SOBRE */
+
+.sobre {
+  padding: 80px 20px;
+  background: #fceef4;
+  text-align: center;
+}
+
+.sobre h2 {
+  color: #a13d63;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.sobre p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* SERVIÇOS */
+
+.servicos {
+  background: white;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.servicos h2 {
+  color: #a13d63;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+}
+
+.categoria {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+.categoria h3 {
+  color: #a13d63;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.categoria p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* GALERIA */
+
+.galeria {
+  padding: 90px 20px;
+  background: white;
+}
+
+.galeria h2 {
+  text-align: center;
+  color: #a13d63;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+
+.galeria-grid {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+/* CONTATO */
+
+.contato {
+  background: #a13d63;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contato h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.contato p {
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+  .hero {
+    height: 50vh;
+    min-height: 400px;
+  }
+
+  .overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+
+  .sobre h2,
+  .servicos h2,
+  .galeria h2,
+  .contato h2 {
+    font-size: 2rem;
+  }
+
+  .categoria p {
+    font-size: 1rem;
+  }
 }
