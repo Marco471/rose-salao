@@ -146,6 +146,30 @@ body {
   margin-bottom: 10px;
 }
 
+/* RODAPÉ */
+
+.rodape {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.rodape p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.rodape a {
+  color: #f4c2d7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.rodape a:hover {
+  text-decoration: underline;
+}
+
 /* RESPONSIVO */
 
 @media (max-width: 768px) {
@@ -180,7 +204,8 @@ body {
 .sobre,
 .servicos,
 .galeria,
-.contato {
+.contato,
+.rodape {
   animation: aparecer 1s ease;
 }
 
