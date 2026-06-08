@@ -17,13 +17,7 @@ export default function Home() {
         />
 
         <div className="overlay">
-          <Image
-            src="/galeria/logo-rose.png"
-            alt="Logo Rose"
-            width={100}
-            height={100}
-            priority
-          />
+          
 
           <h1>
             SALÃO DE BELEZA
