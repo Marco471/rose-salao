@@ -121,21 +121,6 @@ export default function Home() {
           WhatsApp
         </a>
       </section>
-
-      <footer className="rodape">
-        <p>© 2026 Salão de Beleza Rose. Todos os direitos reservados.</p>
-
-        <p>
-          Desenvolvido por{" "}
-          <a
-            href="https://studio.neolock.com.br"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Studio Neolock
-          </a>
-        </p>
-      </footer>
     </main>
   );
 }
