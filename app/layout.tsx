@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rose Salão de Beleza",
+  title: " Salão de Beleza Rose ",
   description: "Beleza, cuidado e autoestima.",
 };
 
