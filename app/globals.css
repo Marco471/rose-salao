@@ -16,6 +16,9 @@ body {
   position: relative;
   height: 45vh;
   min-height: 380px;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .overlay {
@@ -159,6 +162,7 @@ body {
   .hero {
     height: 50vh;
     min-height: 400px;
+    max-width: 100%;
   }
 
   .overlay h1 {

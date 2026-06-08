@@ -5,12 +5,16 @@ export default function Home() {
     <main>
       <section className="hero">
         <Image
-          src="/banner2026.jpg"
-          alt="Rose Salão de Beleza"
-          fill
-          priority
-          sizes="100vw"
-        />
+  src="/banner2026.jpg"
+  alt="Rose Salão de Beleza"
+  fill
+  priority
+  sizes="100vw"
+  style={{
+    objectFit: "cover",
+    objectPosition: "center 20%",
+  }}
+/>
 
         <div className="overlay">
           <h1>Rose Salão de Beleza</h1>
